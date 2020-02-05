@@ -1,4 +1,7 @@
+
 package com.thoughtworks;
+
+import java.util.Arrays;
 
 public class ArrayPractice1 {
 
@@ -11,6 +14,10 @@ public class ArrayPractice1 {
      */
     public static void printArrayReverse() {
         int[] array = new int[]{1, 2, 3};
-
+        int[] result = new int[array.length];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = array[array.length - 1 - i];
+        }
+        System.out.println(Arrays.toString(result));
     }
 }
