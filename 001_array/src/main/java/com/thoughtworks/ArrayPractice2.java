@@ -18,6 +18,6 @@ public class ArrayPractice2 {
         int tmp = array[0];
         array[0] = max;
         array[index] = tmp;
-        return null;
+        return array;
     }
 }
